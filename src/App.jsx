@@ -4,7 +4,7 @@ import { makeStyle } from './styles/globalStyles';
 
 import Nav              from './components/Nav';
 import MobileNav        from './components/MobileNav';
-import FloatingChatbot  from './components/FloatingChatbot';
+//import FloatingChatbot  from './components/FloatingChatbot';
 
 import HomePage         from './pages/HomePage';
 import WorkoutsPage     from './pages/WorkoutsPage';
@@ -24,8 +24,6 @@ const PAGES = {
   Schedule:    SchedulePage,
   Challenges:  ChallengesPage,
   Metrics:     MetricsPage,
-  Calculator:  CalculatorPage,
-  Music:       MusicPage,
 };
 
 function AppInner() {
