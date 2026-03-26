@@ -8,7 +8,7 @@ export default function Nav({ page, setPage }) {
     <nav className="nav">
       <div className="nav-logo" onClick={() => setPage("Home")}>FITFORGE</div>
       <div className="nav-links">
-        {.mapLINKS(l => (
+        {LINKS.map(l => (
           <button key={l} className={`nav-btn ${page === l ? "active" : ""}`} onClick={() => setPage(l)}>{l}</button>
         ))}
       </div>
