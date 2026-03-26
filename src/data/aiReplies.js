@@ -1,7 +1,7 @@
 export function getAIReply(q) {
   const l = q.toLowerCase();
   if (l.includes("workout") || l.includes("plan") || l.includes("training"))
-    return "Here's a 4-day split for you:\n\n💪Day 1 – Push (Chest, Shoulders, Triceps)\n🔙 Day 2 – Pull (Back, Biceps)\n😴 Day 3 – Rest / Active recovery\n🦵 Day 4 – Legs (Quads, Hamstrings, Glutes)\n⚡ Day 5 – Full Body / HIIT\n\nWarm up 5 min before each session. You've got this!";
+    return "Here's a 4-day split for you:\n\n💪 Day 1 – Push (Chest, Shoulders, Triceps)\n🔙 Day 2 – Pull (Back, Biceps)\n😴 Day 3 – Rest / Active recovery\n🦵 Day 4 – Legs (Quads, Hamstrings, Glutes)\n⚡ Day 5 – Full Body / HIIT\n\nWarm up 5 min before each session. You've got this!";
   if (l.includes("lose") || l.includes("fat") || l.includes("cut"))
     return "For fat loss:\n\n✅ Caloric deficit of 300–500 kcal/day\n✅ 3–4 cardio sessions per week\n✅ Strength train 3× to preserve muscle\n✅ Sleep 7–9 hours — non-negotiable\n✅ Track food in the Nutrition tab\n\nConsistency beats perfection every time! 🔥";
   if (l.includes("muscle") || l.includes("bulk") || l.includes("gain"))
@@ -17,7 +17,4 @@ export function getAIReply(q) {
   if (l.includes("hello") || l.includes("hi") || l.includes("hey"))
     return "Hey there, champion! 👋 I'm FORGE AI, your personal fitness coach.\n\nI can help you with:\n🏋️ Workout plans & programs\n🥗 Nutrition & macro guidance\n💤 Recovery strategies\n🔥 Motivation when you need it\n\nWhat are we working on today?";
   return "Great question! I can help with workouts, nutrition, recovery, body metrics, and motivation.\n\nTry asking:\n• 'Give me a workout plan'\n• 'How do I lose fat fast?'\n• 'I need motivation'\n• 'How much protein do I need?'\n\nI'm here 24/7 — ask away! 🤖";
-   if (l.includes("ananyaa") || l.includes("plan") || l.includes("training"))
-    return "Here's a 4-day split for you:\n\n💪 Day 1 – Push (Chest, Shoulders, Triceps)\n🔙 Day 2 – Pull (Back, Biceps)\n😴 Day 3 – Rest / Active recovery\n🦵 Day 4 – Legs (Quads, Hamstrings, Glutes)\n⚡ Day 5 – Full Body / HIIT\n\nWarm up 10 min before each session. You've got this!";
-
 }
