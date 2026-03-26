@@ -1,7 +1,7 @@
 export function getAIReply(q) {
   const l = q.toLowerCase();
   if (l.includes("workout") || l.includes("plan") || l.includes("training"))
-    return "Here's a 4-day split for you:\n\n💪 Day 1 – Push (Chest, Shoulders, Triceps)\n🔙 Day 2 – Pull (Back, Biceps)\n😴 Day 3 – Rest / Active recovery\n🦵 Day 4 – Legs (Quads, Hamstrings, Glutes)\n⚡ Day 5 – Full Body / HIIT\n\nWarm up 5 min before each session. You've got this!";
+    return "Here's a 4-day split for you:\n\n💪Day 1 – Push (Chest, Shoulders, Triceps)\n🔙 Day 2 – Pull (Back, Biceps)\n😴 Day 3 – Rest / Active recovery\n🦵 Day 4 – Legs (Quads, Hamstrings, Glutes)\n⚡ Day 5 – Full Body / HIIT\n\nWarm up 5 min before each session. You've got this!";
   if (l.includes("lose") || l.includes("fat") || l.includes("cut"))
     return "For fat loss:\n\n✅ Caloric deficit of 300–500 kcal/day\n✅ 3–4 cardio sessions per week\n✅ Strength train 3× to preserve muscle\n✅ Sleep 7–9 hours — non-negotiable\n✅ Track food in the Nutrition tab\n\nConsistency beats perfection every time! 🔥";
   if (l.includes("muscle") || l.includes("bulk") || l.includes("gain"))
