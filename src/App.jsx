@@ -13,8 +13,6 @@ import ProgressPage     from './pages/ProgressPage';
 import SchedulePage     from './pages/SchedulePage';
 import ChallengesPage   from './pages/ChallengesPage';
 import MetricsPage      from './pages/MetricsPage';
-import CalculatorPage   from './pages/CalculatorPage';
-import MusicPage        from './pages/MusicPage';
 
 const PAGES = {
   Home:        HomePage,
