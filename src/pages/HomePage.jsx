@@ -5,13 +5,13 @@ import { TESTIMONIALS, PLANS, TEAM } from '../data/constants';
 
 const FEATURES = [
   { icon:"🏋️", title:"WORKOUTS",    desc:"300+ curated programs from beginner to elite. Strength, HIIT, cardio, yoga and more.", page:"Workouts" },
-  { icon:"🥗",  title:"NUTRITION",   desc:"Track macros, log meals, and get AI-powered plans tailored to your specific goals.",    page:"Nutrition" },
-  { icon:"📊",  title:"PROGRESS",    desc:"Visualise your transformation with detailed charts, streaks, and personal records.",     page:"Progress" },
+ // { icon:"🥗",  title:"NUTRITION",   desc:"Track macros, log meals, and get AI-powered plans tailored to your specific goals.",    page:"Nutrition" },
+  //{ icon:"📊",  title:"PROGRESS",    desc:"Visualise your transformation with detailed charts, streaks, and personal records.",     page:"Progress" },
   { icon:"📅",  title:"SCHEDULE",    desc:"Plan your week, set smart reminders, and build the habits that produce results.",       page:"Schedule" },
   { icon:"🏆",  title:"CHALLENGES",  desc:"Compete on community leaderboards, earn badges, and hit milestone rewards.",            page:"Challenges" },
   { icon:"📏",  title:"BODY METRICS",desc:"Track BMI, body fat, water intake, and your measurement log over time.",                page:"Metrics" },
-  { icon:"🧮",  title:"CALCULATOR",  desc:"BMI, TDEE, and macro split — all calculated in real-time from your stats.",            page:"Calculator" },
-  { icon:"🎵",  title:"MUSIC",       desc:"Curated workout playlists across 6 moods to keep you in the zone.",                    page:"Music" },
+ // { icon:"🧮",  title:"CALCULATOR",  desc:"BMI, TDEE, and macro split — all calculated in real-time from your stats.",            page:"Calculator" },
+  //{ icon:"🎵",  title:"MUSIC",       desc:"Curated workout playlists across 6 moods to keep you in the zone.",                    page:"Music" },
   { icon:"🤖",  title:"AI COACH",    desc:"Chat with FORGE AI anytime — your 24/7 personal coach at the bottom of every page.",   page:"Home" },
 ];
 
@@ -244,34 +244,6 @@ export default function HomePage({ setPage }) {
 
       <div className="divider"/>
 
-      {/* ── PRICING ── */}
-      <div className="section">
-        <div className="section-header">
-          <div className="section-tag">Simple Pricing</div>
-          <h2 className="section-title">INVEST IN YOUR <span>GAINS</span></h2>
-        </div>
-        <div className="pricing-grid">
-          {PLANS.map(p => (
-            <div key={p.name} className={`price-card ${p.featured ? 'featured' : ''}`}>
-              {p.featured && <div className="price-popular">Most Popular</div>}
-              <div style={{fontFamily:'var(--font-display)',fontSize:28,marginBottom:4}}>{p.name}</div>
-              <div style={{fontSize:12,color:'var(--muted)',marginBottom:24}}>{p.desc}</div>
-              <div style={{fontFamily:'var(--font-display)',fontSize:54,color:'var(--accent)',lineHeight:1}}>{p.price}</div>
-              <div style={{fontSize:13,color:'var(--muted)',marginBottom:24}}>{p.period}</div>
-              <div style={{display:'flex',flexDirection:'column',gap:10,marginBottom:28}}>
-                {p.feats.map(f => (
-                  <div key={f} style={{display:'flex',alignItems:'center',gap:9,fontSize:13,color:'var(--muted)'}}>
-                    <span style={{color:'var(--accent)'}}>✦</span>{f}
-                  </div>
-                ))}
-              </div>
-              <button className={p.featured ? 'btn-primary' : 'btn-outline'} style={{width:'100%'}}>
-                {p.price === 'Free' ? 'Get Started Free' : `Get ${p.name}`}
-              </button>
-            </div>
-          ))}
-        </div>
-      </div>
 
       <div className="divider"/>
 
@@ -288,7 +260,7 @@ export default function HomePage({ setPage }) {
               Whether you're a solo athlete, gym owner, or brand looking to partner — we're all ears.
             </p>
             <div style={{display:'flex',flexDirection:'column',gap:18}}>
-              {[{icon:'📧',label:'Email',val:'hello@fitforge.io'},{icon:'📍',label:'Location',val:'San Francisco, CA'},{icon:'📞',label:'Phone',val:'+1 (415) 234-5678'},{icon:'💬',label:'Live Chat',val:'9am–9pm PST'}].map(c => (
+              {[{icon:'📧',label:'Email',val:'hello@fitforge.io'},{icon:'📍',label:'Location',val:'ChandhiGarth, CH'},{icon:'📞',label:'Phone',val:'+91 (790) 303-9705'},{icon:'💬',label:'Live Chat',val:'9am–9pm PST'}].map(c => (
                 <div key={c.label} style={{display:'flex',alignItems:'center',gap:14}}>
                   <div style={{width:46,height:46,borderRadius:10,background:'var(--surface2)',border:'1px solid var(--border)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:18,flexShrink:0}}>{c.icon}</div>
                   <div>
@@ -303,8 +275,8 @@ export default function HomePage({ setPage }) {
             <div style={{fontFamily:'var(--font-display)',fontSize:30,marginBottom:24}}>SEND A MESSAGE</div>
             {sent && <div className="form-success">✓ Message sent! We'll respond within 24 hours.</div>}
             <div className="form-row" style={{marginBottom:14}}>
-              <div className="fg"><label className="fl">Name</label><input className="fi" placeholder="Alex Morgan" value={form.name} onChange={e => setForm({...form,name:e.target.value})}/></div>
-              <div className="fg"><label className="fl">Email</label><input className="fi" placeholder="alex@email.com" value={form.email} onChange={e => setForm({...form,email:e.target.value})}/></div>
+              <div className="fg"><label className="fl">Name</label><input className="fi" placeholder="Ananya Srishti" value={form.name} onChange={e => setForm({...form,name:e.target.value})}/></div>
+              <div className="fg"><label className="fl">Email</label><input className="fi" placeholder="ananya@gmail.com" value={form.email} onChange={e => setForm({...form,email:e.target.value})}/></div>
             </div>
             <div className="fg"><label className="fl">Subject</label><input className="fi" placeholder="How can we help?" value={form.subject} onChange={e => setForm({...form,subject:e.target.value})}/></div>
             <div className="fg"><label className="fl">Message</label><textarea className="fta" rows={4} placeholder="Tell us more…" value={form.msg} onChange={e => setForm({...form,msg:e.target.value})}/></div>
@@ -313,25 +285,6 @@ export default function HomePage({ setPage }) {
         </div>
       </div>
 
-      {/* ── FOOTER ── */}
-      <footer className="footer">
-        <div className="footer-grid">
-          <div>
-            <div className="footer-logo">FITFORGE</div>
-            <p style={{fontSize:13,color:'var(--muted)',lineHeight:1.7,maxWidth:240}}>The ultimate fitness platform for athletes who are serious about results.</p>
-            <div style={{display:'flex',gap:8,marginTop:18}}>
-              {['𝕏','in','f','▶'].map(s => <div key={s} className="soc-btn">{s}</div>)}
-            </div>
-          </div>
-          <div><div className="footer-col-title">PLATFORM</div>{['Workouts','Nutrition','Progress','Schedule','Challenges'].map(l => <span key={l} className="footer-link">{l}</span>)}</div>
-          <div><div className="footer-col-title">COMPANY</div>{['About Us','Team','Blog','Careers','Press'].map(l => <span key={l} className="footer-link">{l}</span>)}</div>
-          <div><div className="footer-col-title">SUPPORT</div>{['Help Center','Contact Us','Privacy Policy','Terms','Status'].map(l => <span key={l} className="footer-link">{l}</span>)}</div>
-        </div>
-        <div className="footer-bottom">
-          <div style={{fontSize:12,color:'var(--muted)'}}>© 2025 FitForge Inc. All rights reserved.</div>
-          <div style={{display:'flex',gap:18}}>{['Privacy','Terms','Cookies'].map(l => <span key={l} className="footer-link" style={{marginBottom:0}}>{l}</span>)}</div>
-        </div>
-      </footer>
     </div>
   );
 }
