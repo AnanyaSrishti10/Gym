@@ -1,6 +1,6 @@
 import { useTheme } from '../context/ThemeContext';
 
-const LINKS = ["Home","Workouts","Nutrition","Progress","Schedule","Challenges","Metrics","Calculator","Music"];
+const LINKS = ["Home","Workouts","Nutrition","Schedule","Metrics"];
 
 export default function Nav({ page, setPage }) {
   const { dark, setDark } = useTheme();
