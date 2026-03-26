@@ -41,7 +41,7 @@ function AppInner() {
       <div className="app">
         <Nav page={page} setPage={setPage} />
         <Page setPage={setPage} />
-        <FloatingChatbot />
+        {/* <FloatingChatbot /> */}
         <MobileNav page={page} setPage={setPage} />
       </div>
     </>
