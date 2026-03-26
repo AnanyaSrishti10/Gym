@@ -1,17 +1,13 @@
 import { useState } from 'react';
 import DumbbellSVG from '../components/DumbbellSVG';
 import Scene3D from '../components/Scene3D';
-import { TESTIMONIALS, PLANS, TEAM } from '../data/constants';
+import { TESTIMONIALS,TEAM } from '../data/constants';
 
 const FEATURES = [
   { icon:"🏋️", title:"WORKOUTS",    desc:"300+ curated programs from beginner to elite. Strength, HIIT, cardio, yoga and more.", page:"Workouts" },
- // { icon:"🥗",  title:"NUTRITION",   desc:"Track macros, log meals, and get AI-powered plans tailored to your specific goals.",    page:"Nutrition" },
-  //{ icon:"📊",  title:"PROGRESS",    desc:"Visualise your transformation with detailed charts, streaks, and personal records.",     page:"Progress" },
   { icon:"📅",  title:"SCHEDULE",    desc:"Plan your week, set smart reminders, and build the habits that produce results.",       page:"Schedule" },
   { icon:"🏆",  title:"CHALLENGES",  desc:"Compete on community leaderboards, earn badges, and hit milestone rewards.",            page:"Challenges" },
   { icon:"📏",  title:"BODY METRICS",desc:"Track BMI, body fat, water intake, and your measurement log over time.",                page:"Metrics" },
- // { icon:"🧮",  title:"CALCULATOR",  desc:"BMI, TDEE, and macro split — all calculated in real-time from your stats.",            page:"Calculator" },
-  //{ icon:"🎵",  title:"MUSIC",       desc:"Curated workout playlists across 6 moods to keep you in the zone.",                    page:"Music" },
   { icon:"🤖",  title:"AI COACH",    desc:"Chat with FORGE AI anytime — your 24/7 personal coach at the bottom of every page.",   page:"Home" },
 ];
 
@@ -243,8 +239,6 @@ export default function HomePage({ setPage }) {
       </div>
 
       <div className="divider"/>
-
-
       <div className="divider"/>
 
       {/* ── CONTACT ── */}
