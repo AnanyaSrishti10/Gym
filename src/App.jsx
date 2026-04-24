@@ -4,7 +4,7 @@ import { makeStyle } from './styles/globalStyles';
 
 import Nav              from './components/Nav';
 import MobileNav        from './components/MobileNav';
-//import FloatingChatbot  from './components/FloatingChatbot';
+import FloatingChatbot  from './components/FloatingChatbot';
 
 import HomePage         from './pages/HomePage';
 import WorkoutsPage     from './pages/WorkoutsPage';
@@ -37,7 +37,7 @@ function AppInner() {
       <div className="app">
         <Nav page={page} setPage={setPage} />
         <Page setPage={setPage} />
-        {/* <FloatingChatbot /> */}
+        <FloatingChatbot />
         <MobileNav page={page} setPage={setPage} />
       </div>
     </>
